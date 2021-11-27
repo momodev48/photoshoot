@@ -1,0 +1,85 @@
+.flexbin {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: -2.5px; }
+.flexbin:after {
+    content: '';
+    flex-grow: 999999999;
+    min-width: 300px;
+    height: 0; }
+.flexbin > * {
+    position: relative;
+    display: block;
+    height: 300px;
+    margin: 2.5px;
+    flex-grow: 1; }
+.flexbin > * > img {
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: bottom; }
+.flexbin.flexbin-margin {
+    margin: 2.5px; }
+@media (max-width: 980px) {
+    .flexbin {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin: -2.5px; }
+    .flexbin:after {
+        content: '';
+        flex-grow: 999999999;
+        min-width: 150px;
+        height: 0; }
+    .flexbin > * {
+        position: relative;
+        display: block;
+        height: 150px;
+        margin: 2.5px;
+        flex-grow: 1; }
+    .flexbin > * > img {
+        height: 150px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom; }
+    .flexbin.flexbin-margin {
+        margin: 2.5px; } }
+@media (max-width: 400px) {
+    .flexbin {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin: -2.5px; }
+    .flexbin:after {
+        content: '';
+        flex-grow: 999999999;
+        min-width: 100px;
+        height: 0; }
+    .flexbin > * {
+        position: relative;
+        display: block;
+        height: 100px;
+        margin: 2.5px;
+        flex-grow: 1; }
+    .flexbin > * > img {
+        height: 100px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom; }
+    .flexbin.flexbin-margin {
+        margin: 2.5px; } }
+// Default variables that can be overrided
+$flexbin-row-height: 300px !default;
+$flexbin-space: 5px !default;
+
+$flexbin-tablet-max: 980px !default;
+$flexbin-row-height-tablet: 150px !default;
+$flexbin-space-tablet: $flexbin-space !default;
+
+$flexbin-phone-max: 400px !default;
+$flexbin-row-height-phone: 100px !default;
+$flexbin-space-phone: $flexbin-space !default;

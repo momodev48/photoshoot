@@ -1,0 +1,181 @@
+// Set your brand colors
+
+body
+{
+    background-color: $grey;
+
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+    &:hover
+    {
+        color: $blue;
+    }
+}
+
+.is-dark
+{
+    background-color: $dark !important;
+    color: $white !important;
+    &:hover, &:focus
+    {
+        background-color: lighten(black,22%) !important;
+    }
+}
+
+.button
+{
+    border-color: transparent;
+    &--white, &--black, &--blue, &--orange, &--rouge,&--green
+    {
+        color: white;
+        &:hover
+        {
+            color: darken(white,5%) !important;
+        }
+    }
+    &--white
+    {
+        background-color: $white;
+    }
+    &--black
+    {
+        background-color: $black;
+        &:hover
+        {
+            background-color: lighten(black,22%) !important;
+        }
+    }
+    &--rouge
+    {
+        background-color: $red;
+    }
+    &--blue
+    {
+      background-color: $blue;
+    }
+    &--orange
+    {
+        background-color: $orange;
+    }
+    &--green
+    {
+        background-color: $green;
+    }
+}
+
+.card
+{
+    color: $text !important;
+    &--tranparent
+    {
+        background-color: inherit !important;
+        border: 2px solid $blue;
+    }
+}
+
+.link
+{
+    &--white
+    {
+        @include lg
+        {
+            color: $white !important;
+            &:hover
+            {
+                color: darken(white,10%) !important;
+            }
+        }
+    }
+}
+
+
+.menu
+{
+    &-list
+    {
+        //background-color: $black-grey !important;
+        & a
+        {
+            color: $grey;
+
+        }
+        &:hover
+        {/*
+            background-color: $black-grey !important;
+            color: $black !important;*/
+        }
+    }
+    &-item
+    {
+        &:focus
+        {
+            background-color: $black-grey !important;
+            color: $white !important;
+        }
+        &:hover
+        {
+            //color: $white !important;
+        }
+    }
+}
+
+.has-text-blue
+{
+    color: $blue !important;
+}
+.has-text-white
+{
+    color: $white !important;
+}
+.has-text-orange
+{
+    color: $orange !important;
+}
+.has-text-green
+{
+    color: $green !important;
+}
+.has-text-red
+{
+    color: $red !important;
+}
+.has-background-blue
+{
+    background-color: $blue;
+}
+.has-background-orange
+{
+    background-color: $orange;
+}
+
+.notification.is-white
+{
+    color: inherit !important;
+}
+
+.is-danger
+{
+    &:hover
+    {
+        color: $white !important;
+    }
+}
+
+.navbar-link:not(.is-arrowless)::after
+{
+        border-color: white;
+}
+
+::selection{
+    background-color: $grey-dark;
+    color: $white;
+  }
+
+  /* Firefox */
+  ::-moz-selection {
+    background-color: $dark;
+    color: $white;
+  }

@@ -1,0 +1,60 @@
+
+.footer
+{
+    background-color: inherit;
+    padding: 0 !important;
+    @include md
+    {
+        max-width: 60vw;
+        margin: 0 auto;
+    }
+    @include lg
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //max-width: 50vw;
+    }
+    &__el
+    {
+        &:nth-child(2)
+        {
+            padding: 5vh 0;
+
+            @include lg
+            {
+                padding: 0 10vw;
+            }
+            @include xl
+            {
+                padding: 0 15vw;
+            }
+        }
+    }
+    &__listeres
+    {
+        display: flex;
+        //align-items: center;
+        justify-content: center;
+        @include lg
+        {
+            justify-content: flex-start;
+            margin-top: 2.5rem;
+        }
+        @include xl
+        {
+            margin-top: 4rem;
+        }
+        &--center
+        {
+            justify-content:center !important;
+        }
+        &-el
+        {
+            &:not(:first-child)
+            {
+                margin-left: 2em;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+
+@import 'utils/variables';
+@import 'utils/mixin';
+@import 'components/flexbin';
+@import 'components/animations';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/components';
+@import 'components/layout';
+@import 'components/form';
+@import 'components/elements';
+@import 'components/grid';
+@import 'components/utilities';
+@import 'components/navigation';
+@import 'components/type';
+@import 'components/images';
+@import 'components/listes';
+@import 'components/colors';
+
+* {
+    box-sizing: border-box;
+}
+
+
+body
+{
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
