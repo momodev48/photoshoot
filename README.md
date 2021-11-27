@@ -1,4 +1,4 @@
-# Studio32
+# Photoshoot (Laravel 8)
 
 ### Installation
 
