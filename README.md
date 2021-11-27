@@ -1,5 +1,11 @@
 # Photoshoot (Laravel 8)
 
+Une application web développé sur Laravel elle permet la communication et le partage de photos entre un studio photo ou un photographe et leurs clients.
+
+### Presentation
+
+https://docs.google.com/presentation/d/1lzCXA8n6GbF0NZ0SdOluC42-NNQDwdaEggE4kKvl1d0/edit?usp=sharing
+
 ### Installation
 
 Comme tout projet Laravel, avant l'installation merci de vérifier que vous disposez des éléments suivants :
